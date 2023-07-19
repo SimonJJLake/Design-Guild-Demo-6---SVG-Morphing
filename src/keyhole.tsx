@@ -4,7 +4,13 @@ export const Keyhole: React.FC<{ isKeyhole: boolean }> = ({ isKeyhole }) => {
   const rectanglePath =
     "M 158 172 C 158 147 158 136 158 119 C 158 105 158 96 158 82 C 158 68 158 54 158 40 C 158 26 158 20 158 0 C 107 0 93.461 -0.0317 79.6597 -0.0583 C 65.8585 -0.085 52 0 0 0 C 0 19 0 29 0 39 C 0 55 0 67 0 82 C 0 95 0 105 0 118 C 0 130 0 146 0 172 C 0 205 0 233 0 234 L 1.7 234.21 H 157 L 158 234 C 158 231 158 205 158 172 Z";
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 234">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 158 234"
+      height="100%"
+      width="100%"
+      preserveAspectRatio="none"
+    >
       <path
         style={{ transition: "all 1s" }}
         d={isKeyhole ? keyholePath : rectanglePath}

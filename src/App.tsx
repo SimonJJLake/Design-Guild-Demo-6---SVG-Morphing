@@ -4,15 +4,16 @@ import { Keyhole } from "./keyhole";
 
 function App() {
   const [toggle, setToggle] = useState(true);
+  const aspectRatio = 158 / 234;
 
   return (
     <div className="App">
       <div
         style={{
-          width: toggle ? "50vh" : "100vw",
-          height: toggle ? "50vh" : "",
+          width: toggle ? `${50 * aspectRatio}vh` : "100vw",
+          height: toggle ? "50vh" : "100vh",
           position: "fixed",
-          top: toggle ? "40%" : "0",
+          top: toggle ? "50%" : "0",
           bottom: toggle ? "" : "0",
           translate: toggle ? "-50% -50%" : "-50%",
           transition: "all 1s",
